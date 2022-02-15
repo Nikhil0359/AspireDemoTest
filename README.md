@@ -24,6 +24,7 @@ com.aspire.util pacakge have class in which we can keep reusable code.
 
 com.aspire.testcases packages have testcases for different pages.
    I have created three classes for different scenarios.
+   
       1.LoginPageTestCase
       2.InventoryPageTestCase
       3.ManufacturingPageTestCase
