@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-15T14:34:21 IST" name="AspireAutomation" finished-at="2022-02-15T14:35:19 IST" duration-ms="58194">
+    <groups>
+    </groups>
+    <test started-at="2022-02-15T14:34:21 IST" name="AspireTest" finished-at="2022-02-15T14:35:19 IST" duration-ms="58194">
+      <class name="com.aspire.testcases.LoginPageTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.aspire.testcases.LoginPageTestCase@581ac8a8]" started-at="2022-02-15T14:34:21 IST" name="setUp" finished-at="2022-02-15T14:34:26 IST" duration-ms="4334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyLoginPageTitle()[pri:1, instance:com.aspire.testcases.LoginPageTestCase@581ac8a8]" started-at="2022-02-15T14:34:26 IST" name="VerifyLoginPageTitle" finished-at="2022-02-15T14:34:26 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.aspire.testcases.LoginPageTestCase@581ac8a8]" started-at="2022-02-15T14:34:26 IST" name="tearDown" finished-at="2022-02-15T14:34:26 IST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.aspire.testcases.LoginPageTestCase@581ac8a8]" started-at="2022-02-15T14:34:26 IST" name="setUp" finished-at="2022-02-15T14:34:29 IST" duration-ms="3009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyLoginSuccessful()[pri:2, instance:com.aspire.testcases.LoginPageTestCase@581ac8a8]" started-at="2022-02-15T14:34:29 IST" name="VerifyLoginSuccessful" finished-at="2022-02-15T14:34:32 IST" duration-ms="2648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginSuccessful -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.aspire.testcases.LoginPageTestCase@581ac8a8]" started-at="2022-02-15T14:34:32 IST" name="tearDown" finished-at="2022-02-15T14:34:33 IST" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aspire.testcases.LoginPageTestCase -->
+      <class name="com.aspire.testcases.ManufacturingPageTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.aspire.testcases.ManufacturingPageTestCase@52af26ee]" started-at="2022-02-15T14:34:52 IST" name="setUp" finished-at="2022-02-15T14:34:55 IST" duration-ms="3058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginSuccessful()[pri:1, instance:com.aspire.testcases.ManufacturingPageTestCase@52af26ee]" started-at="2022-02-15T14:34:55 IST" name="verifyLoginSuccessful" finished-at="2022-02-15T14:34:57 IST" duration-ms="2644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginSuccessful -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.aspire.testcases.ManufacturingPageTestCase@52af26ee]" started-at="2022-02-15T14:34:57 IST" name="tearDown" finished-at="2022-02-15T14:34:58 IST" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.aspire.testcases.ManufacturingPageTestCase@52af26ee]" started-at="2022-02-15T14:34:58 IST" name="setUp" finished-at="2022-02-15T14:35:01 IST" duration-ms="2875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyManufacutureCreated()[pri:2, instance:com.aspire.testcases.ManufacturingPageTestCase@52af26ee]" started-at="2022-02-15T14:35:01 IST" name="verifyManufacutureCreated" finished-at="2022-02-15T14:35:19 IST" duration-ms="17697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManufacutureCreated -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.aspire.testcases.ManufacturingPageTestCase@52af26ee]" started-at="2022-02-15T14:35:19 IST" name="tearDown" finished-at="2022-02-15T14:35:19 IST" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aspire.testcases.ManufacturingPageTestCase -->
+      <class name="com.aspire.testcases.InventoryPageTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.aspire.testcases.InventoryPageTestCase@306e95ec]" started-at="2022-02-15T14:34:33 IST" name="setUp" finished-at="2022-02-15T14:34:36 IST" duration-ms="3108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyLoginSuccessful()[pri:1, instance:com.aspire.testcases.InventoryPageTestCase@306e95ec]" started-at="2022-02-15T14:34:36 IST" name="VerifyLoginSuccessful" finished-at="2022-02-15T14:34:38 IST" duration-ms="2598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginSuccessful -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.aspire.testcases.InventoryPageTestCase@306e95ec]" started-at="2022-02-15T14:34:38 IST" name="tearDown" finished-at="2022-02-15T14:34:39 IST" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.aspire.testcases.InventoryPageTestCase@306e95ec]" started-at="2022-02-15T14:34:39 IST" name="setUp" finished-at="2022-02-15T14:34:42 IST" duration-ms="2999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CreateNewProduct()[pri:2, instance:com.aspire.testcases.InventoryPageTestCase@306e95ec]" started-at="2022-02-15T14:34:42 IST" name="CreateNewProduct" finished-at="2022-02-15T14:34:51 IST" duration-ms="8938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.aspire.testcases.InventoryPageTestCase@306e95ec]" started-at="2022-02-15T14:34:51 IST" name="tearDown" finished-at="2022-02-15T14:34:52 IST" duration-ms="707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aspire.testcases.InventoryPageTestCase -->
+    </test> <!-- AspireTest -->
+  </suite> <!-- AspireAutomation -->
+</testng-results>
