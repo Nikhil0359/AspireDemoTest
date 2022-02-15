@@ -7,9 +7,11 @@ I have created below packages in src/main/java
     4.com.aspire.util
     
 I have created below packages in src/test/java
+
     1.com.aspire.testcases
     
 I have created below xml file in src/main/resources
+
    testng.xml
    
 In com.aspire.base package i have created one base class which has base class constructor to fetch file from config
