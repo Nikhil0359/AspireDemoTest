@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aspire.base.Base;
-import com.aspire.pages.LoginPage;
+import com.aspire.pagesObjects.LoginPage;
 
 
 public class LoginPageTestCase extends Base {
@@ -21,19 +21,21 @@ public class LoginPageTestCase extends Base {
 		// call base class constructor
 		super();
 	}
-
+	//This method will initialize all data in base class
 	@BeforeMethod
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
 	}
-
+    
+	//This method will verify login page title
 	@Test(priority = 1)
 	public void VerifyLoginPageTitle() {
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Odoo");
 	}
-
+ 
+	//This method will verify is login successful
 	@Test(priority = 2)
 	public void VerifyLoginSuccessful() {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -41,6 +43,7 @@ public class LoginPageTestCase extends Base {
 		Assert.assertEquals(iconTitle, "Inventory");
 	}
 
+	//This method will close all browsers
 	@AfterMethod
 	public void tearDown() {
 		driver.close();

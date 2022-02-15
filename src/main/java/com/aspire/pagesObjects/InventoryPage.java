@@ -47,7 +47,7 @@ public class InventoryPage extends Base{
 	@FindBy(xpath = "//button[@title='Save record']")
 	public WebElement manfactureSavebtn;
 	
-	
+	//Create product method
 	public void createProduct(){
 		inventoryIcon.click();
 		productone.click();

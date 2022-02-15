@@ -13,7 +13,7 @@ public class LoginPage extends Base {
 		PageFactory.initElements(driver, this);
 	}
 
-	// page factory
+	// page factory locators
 	@FindBy(xpath = "//input[@id='login']")
 	public WebElement enterUsername;
 
@@ -31,7 +31,7 @@ public class LoginPage extends Base {
 		return driver.getTitle();
 	}
     
-	
+	//Login method
 	public void login(String un, String pw) {
 		enterUsername.sendKeys(un);
 		enterPassword.sendKeys(pw);

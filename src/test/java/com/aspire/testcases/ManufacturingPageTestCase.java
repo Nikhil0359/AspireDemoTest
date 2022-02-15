@@ -6,8 +6,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aspire.base.Base;
-import com.aspire.pages.LoginPage;
-import com.aspire.pages.ManufacturingPage;
+import com.aspire.pagesObjects.LoginPage;
+import com.aspire.pagesObjects.ManufacturingPage;
 
 public class ManufacturingPageTestCase extends Base {
 
@@ -15,6 +15,7 @@ public class ManufacturingPageTestCase extends Base {
 	ManufacturingPage manufacturingPage;
 
 	public ManufacturingPageTestCase() {
+		// call base class constructor
 		super();
 	}
 	
@@ -24,15 +25,9 @@ public class ManufacturingPageTestCase extends Base {
 		 loginPage=new LoginPage();
 		 manufacturingPage=new ManufacturingPage();
 	}
-	
-	@Test(priority = 1)
-	public void verifyLoginSuccessful() {
-		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		String iconTitle = loginPage.inventoryIcon.getText();
-		Assert.assertEquals(iconTitle, "Inventory");
-	}
 
-	@Test(priority = 2)
+	//This method will create manufacture for created product
+	@Test
 	public void verifyManufacutureCreated()    {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		manufacturingPage.createManufacture();
@@ -40,6 +35,7 @@ public class ManufacturingPageTestCase extends Base {
 		Assert.assertEquals(OrdDone, "Aspire Demo Product");
 	}
 	
+	//This method will close all browsers
 	@AfterMethod
 	public void tearDown() {
 		driver.close();

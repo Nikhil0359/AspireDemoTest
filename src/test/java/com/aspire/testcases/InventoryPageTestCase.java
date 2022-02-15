@@ -1,13 +1,13 @@
 package com.aspire.testcases;
 
-import org.testng.Assert;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aspire.base.Base;
-import com.aspire.pages.InventoryPage;
-import com.aspire.pages.LoginPage;
+import com.aspire.pagesObjects.InventoryPage;
+import com.aspire.pagesObjects.LoginPage;
 
 public class InventoryPageTestCase extends Base {
 
@@ -15,29 +15,26 @@ public class InventoryPageTestCase extends Base {
 	LoginPage loginPage;
 
 	public InventoryPageTestCase() {
+		// call base class constructor
 		super();
 	}
 
+	//This method will initialize all data in base class
 	@BeforeMethod
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
 		inventoryPage = new InventoryPage();
 	}
-
-	@Test(priority = 1)
-	public void VerifyLoginSuccessful() {
-		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		String iconTitle = loginPage.inventoryIcon.getText();
-		Assert.assertEquals(iconTitle, "Inventory");
-	}
-
-	@Test(priority = 2)
+    
+	//This method will call createproduct method from InventoryPage class
+	@Test
 	public void CreateNewProduct() {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		inventoryPage.createProduct();
 	}
-
+ 
+	//This method will close all browsers
 	@AfterMethod
 	public void tearDown() {
 		driver.close();
